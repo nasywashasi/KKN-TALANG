@@ -1,0 +1,55 @@
+/* Reset & Dasar */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; }
+.container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+section { padding: 60px 0; }
+
+/* Header */
+header { background: #2E7D32; color: white; padding: 20px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+header .container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.8rem; }
+.logo span { color: #FFEB3B; }
+nav a { color: white; text-decoration: none; margin-left: 25px; font-weight: 500; transition: color 0.3s; }
+nav a:hover { color: #FFEB3B; }
+
+/* Hero */
+.hero { background: linear-gradient(rgba(46, 125, 50, 0.8), rgba(76, 175, 80, 0.9)), url('https://via.placeholder.com/1920x600/4CAF50/FFFFFF?text=Pemandangan+Desa'); background-size: cover; background-position: center; color: white; text-align: center; padding: 120px 0; }
+.hero h1 { font-size: 3.5rem; margin-bottom: 15px; }
+.hero h2 { font-size: 2rem; margin-bottom: 20px; font-weight: 300; }
+.hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto; }
+
+/* Tentang Desa */
+.about { background: white; }
+.about h2, .history h2, .dusun h2 { text-align: center; margin-bottom: 40px; color: #2E7D32; font-size: 2.2rem; }
+.about h2 i, .history h2 i, .dusun h2 i { margin-right: 10px; }
+.about-content { display: flex; flex-wrap: wrap; justify-content: space-around; align-items: flex-start; gap: 40px; }
+.about-text { flex: 1; min-width: 300px; }
+.about-text h3 { color: #2E7D32; margin-bottom: 15px; }
+.kades-card { background: #E8F5E9; padding: 25px; border-radius: 10px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); min-width: 250px; }
+.kades-card img { width: 200px; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; border: 5px solid white; }
+.kades-card h4 { margin: 10px 0 5px; color: #1B5E20; }
+
+/* Sejarah */
+.history { background: #f0f7f0; }
+.timeline { max-width: 800px; margin: 40px auto 0; }
+.timeline-item { background: white; padding: 20px; margin-bottom: 20px; border-left: 5px solid #4CAF50; border-radius: 0 8px 8px 0; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
+
+/* Dusun */
+.dusun-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px; }
+.dusun-card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; border-top: 4px solid #4CAF50; }
+.dusun-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+.dusun-card h3 { color: #1B5E20; margin-bottom: 10px; }
+
+/* Footer */
+footer { background: #1B5E20; color: white; text-align: center; padding: 40px 0 20px; }
+.footer-info { margin-bottom: 20px; }
+.footer-info i { margin-right: 10px; color: #FFEB3B; }
+.copyright { margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; color: #ccc; }
+
+/* Responsif */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .hero h2 { font-size: 1.5rem; }
+    nav a { margin-left: 15px; font-size: 0.9rem; }
+    .about-content { flex-direction: column; align-items: center; }
+}
